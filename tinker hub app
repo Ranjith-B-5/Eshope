@@ -1,2 +1,50 @@
 //file for tinker hub app
-//rayees workspace
+
+import 'dart:html';
+
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(
+    MaterialApp(
+      home: Eshop(),
+    )
+  );
+}
+class Eshop extends StatelessWidget {
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+
+        title: Text('eSHOPE',
+            style: TextStyle(
+              fontSize: 30,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 2,
+              fontFamily: 'Bangers',
+              color: Colors.black,
+        ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.lightBlueAccent[300],
+
+          leading: Icon(
+              Icons.menu,
+          color: Colors.black,
+          ),
+         actions: <Widget>[
+           new IconButton(icon: Icon(Icons.search_rounded),
+               onPressed: () {},
+           color: Colors.black,
+           iconSize: 30),
+        ],
+        ),
+    );
+  }
+}
+
+
